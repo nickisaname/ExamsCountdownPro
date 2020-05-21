@@ -17,7 +17,6 @@
         android:layout_marginEnd="24dp"
         android:layout_marginRight="24dp"
         android:drawableStart="@drawable/ic_materia"
-        android:paddingDrawable="20dp"
         android:hint="Nome dell'esame"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"

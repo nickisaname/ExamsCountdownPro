@@ -1,6 +1,5 @@
 package pdm.uninsubria.it.examscountdownpro
 
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -14,6 +13,7 @@ class AggiungiEsame : AppCompatActivity() {
 
         supportActionBar?.title="Aggiungi nuovo esame"
     }
+
     //Settaggio per mostrare l'incona Annulla per tornare indietro
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.back_menu, menu)

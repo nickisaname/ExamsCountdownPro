@@ -1,5 +1,6 @@
 package pdm.uninsubria.it.examscountdownpro
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -32,7 +33,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun aggiungiEsame () {
-        setContentView(R.layout.activity_aggiungi_esame)
+        val it = Intent(this, AggiungiEsame::class.java)
+        startActivity(it)
     }
 
     fun rimuoviEsame () {

@@ -15,6 +15,7 @@ class AggiungiEsame : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aggiungi_esame)
 
+        //Settaggio di un nuovo titolo per la nuova activity
         supportActionBar?.title="Aggiungi nuovo esame"
     }
 

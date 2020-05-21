@@ -23,12 +23,20 @@ class MainActivity : AppCompatActivity() {
                 aggiungiEsame()
                 true
             }
+            R.id.action_delete -> {
+                rimuoviEsame()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
 
     fun aggiungiEsame () {
         setContentView(R.layout.activity_aggiungi_esame)
+    }
+
+    fun rimuoviEsame () {
+
     }
 
 }

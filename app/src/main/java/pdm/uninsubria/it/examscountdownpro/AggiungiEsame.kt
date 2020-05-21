@@ -2,6 +2,7 @@ package pdm.uninsubria.it.examscountdownpro
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Menu
 
 class AggiungiEsame : AppCompatActivity() {
 
@@ -9,4 +10,5 @@ class AggiungiEsame : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_aggiungi_esame)
     }
+
 }

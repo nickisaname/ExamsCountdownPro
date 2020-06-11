@@ -7,10 +7,13 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.EditText
 import kotlinx.android.synthetic.main.activity_aggiungi_esame.*
+import java.io.DataInput
 import java.util.*
 
 class AggiungiEsame : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,6 +21,13 @@ class AggiungiEsame : AppCompatActivity() {
 
         //Settaggio di un nuovo titolo per la nuova activity
         supportActionBar?.title="Aggiungi nuovo esame"
+
+
+
+
+
+
+
     }
 
     //Settaggio per mostrare l'incona Annulla per tornare indietro
@@ -36,7 +46,7 @@ class AggiungiEsame : AppCompatActivity() {
         }
     }
 
-    public fun openCalendar (view: View) {
+     fun openCalendar (view: View) {
 
         val calendar= Calendar.getInstance()
         val year = calendar.get(Calendar.YEAR)
@@ -53,6 +63,7 @@ class AggiungiEsame : AppCompatActivity() {
         datePickerDialog.show()
 
     }
+
 
 
 }

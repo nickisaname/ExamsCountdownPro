@@ -19,7 +19,10 @@
             <ListView
                 android:id="@+id/id_list"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent" />
+                android:layout_height="match_parent"
+                android:fastScrollAlwaysVisible="true"
+                android:fastScrollEnabled="true"
+                android:scrollbarStyle="outsideOverlay"/>
 
         </LinearLayout>
     </LinearLayout>

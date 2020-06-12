@@ -2,6 +2,6 @@
     <string name="app_name">Exams Countdown</string>
     <string name="Nome_Esame">Nome dell esame</string>
     <string name="Descrizione">Descrizione</string>
-    <string name="Data_Esame">Data dell esame</string>
+    <string name="Data_Esame">Data (es. 01-01-2020)</string>
     <string name="Aggiungi">Aggiungi</string>
 </resources>

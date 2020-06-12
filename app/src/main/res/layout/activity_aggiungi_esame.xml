@@ -30,8 +30,7 @@
         android:hint="@string/Data_Esame"
         android:inputType="date"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText4"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/editText4" />
 
     <EditText
         android:id="@+id/editText6"

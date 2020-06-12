@@ -6,10 +6,9 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.*
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_aggiungi_esame.*
-import kotlinx.android.synthetic.main.activity_main.*
 import java.util.*
 
 class AggiungiEsame : AppCompatActivity() {
@@ -51,6 +50,14 @@ class AggiungiEsame : AppCompatActivity() {
         }, year, month, day)
          datePickerDialog.show()
     }
+    fun AggiungiItem(){
+        val bt : Button = findViewById(R.id.buttonAdd)
+        bt.setOnClickListener(){
+            val it = Intent(this, MainActivity::class.java)
+            startActivity(it)
+        }
+    }
+
 }
 
 

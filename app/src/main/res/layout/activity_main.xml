@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/gray"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -20,6 +21,7 @@
                 android:id="@+id/id_list"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:divider="@null"
                 android:fastScrollAlwaysVisible="true"
                 android:fastScrollEnabled="true"
                 android:scrollbarStyle="outsideOverlay"/>

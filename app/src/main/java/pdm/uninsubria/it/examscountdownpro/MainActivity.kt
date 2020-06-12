@@ -8,16 +8,14 @@ import android.view.MenuItem
 
 class MainActivity : AppCompatActivity() {
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-
-
-
-
+        //Titolo sulla toolbar
+        supportActionBar?.title="Exam Countdown"
     }
-
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.add_button, menu)

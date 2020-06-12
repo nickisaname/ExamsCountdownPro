@@ -57,7 +57,7 @@ class AggiungiEsame : AppCompatActivity() {
 
     }
 
-    fun AggiungiItem(){
+    fun AggiungiItem(view: View){
         val bt : Button = findViewById(R.id.buttonAdd)
         bt.setOnClickListener(){
             val it = Intent(this, MainActivity::class.java)

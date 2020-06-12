@@ -64,6 +64,10 @@ class AggiungiEsame : AppCompatActivity() {
 
     }
 
+    fun AddExam {
+
+    }
+
 
 
 }

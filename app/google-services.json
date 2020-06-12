@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "842466997670",
+    "firebase_url": "https://examscdpro.firebaseio.com",
+    "project_id": "examscdpro",
+    "storage_bucket": "examscdpro.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:842466997670:android:067d3e3936a2b3f3564b67",
+        "android_client_info": {
+          "package_name": "pdm.uninsubria.it.examscountdownpro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "842466997670-s0d9g685h6g83g57rusqlvh308btgtnr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhgFXW0vM6mdgB2aVSkamMoOlpA7iSSec"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "842466997670-s0d9g685h6g83g57rusqlvh308btgtnr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

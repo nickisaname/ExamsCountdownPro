@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        //Titolo sulla toolbar
+        //Titolo sulla toolbar 
         supportActionBar?.title="Exam Countdown"
     }
 

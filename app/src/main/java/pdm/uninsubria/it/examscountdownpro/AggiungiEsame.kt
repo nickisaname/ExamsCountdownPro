@@ -1,6 +1,7 @@
 package pdm.uninsubria.it.examscountdownpro
 
 import android.app.DatePickerDialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -8,6 +9,7 @@ import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.activity_aggiungi_esame.*
 import java.util.*
+import android.widget.Button
 
 class AggiungiEsame : AppCompatActivity() {
 
@@ -55,7 +57,13 @@ class AggiungiEsame : AppCompatActivity() {
 
     }
 
-
+    fun AggiungiItem(){
+        val bt : Button = findViewById(R.id.buttonAdd)
+        bt.setOnClickListener(){
+            val it = Intent(this, MainActivity::class.java)
+            startActivity(it)
+        }
+    }
 
 }
 

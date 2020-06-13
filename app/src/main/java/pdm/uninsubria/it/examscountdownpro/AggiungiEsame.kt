@@ -1,19 +1,19 @@
 package pdm.uninsubria.it.examscountdownpro
 
 import android.app.DatePickerDialog
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.widget.EditText
+import android.widget.Button
+import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_aggiungi_esame.*
-import java.io.DataInput
 import java.util.*
 
 class AggiungiEsame : AppCompatActivity() {
 
+    private val database = FirebaseFirestore.getInstance()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,11 +22,21 @@ class AggiungiEsame : AppCompatActivity() {
         //Settaggio di un nuovo titolo per la nuova activity
         supportActionBar?.title="Aggiungi nuovo esame"
 
+        //dichiarazione Button listener
+        val button = findViewById<Button>(R.id.buttonAdd)
 
+        //funzione del bottone
+        button.setOnClickListener(View.OnClickListener {
+            val nome : String = editText4.getText().toString()
+            val argomento : String = editText6.getText().toString()
+            val data : String = editText5.getText().toString()
 
-
-
-
+            val esame : MutableMap <String, Any> = HashMap()
+            esame ["nome"] = nome
+            esame ["argomento"] = argomento
+            esame ["data"] = data
+            database.collection("Esami").add(esame)
+        })
 
     }
 
@@ -63,7 +73,5 @@ class AggiungiEsame : AppCompatActivity() {
         datePickerDialog.show()
 
     }
-
-
 
 }

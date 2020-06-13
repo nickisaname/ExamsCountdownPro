@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "842466997670",
-    "firebase_url": "https://examscdpro.firebaseio.com",
-    "project_id": "examscdpro",
-    "storage_bucket": "examscdpro.appspot.com"
+    "project_number": "639922819063",
+    "firebase_url": "https://fir-test-3ad20.firebaseio.com",
+    "project_id": "fir-test-3ad20",
+    "storage_bucket": "fir-test-3ad20.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:842466997670:android:067d3e3936a2b3f3564b67",
+        "mobilesdk_app_id": "1:639922819063:android:6b54b82f5a6bb64b9ee8f2",
         "android_client_info": {
-          "package_name": "pdm.uninsubria.it.examscountdownpro"
+          "package_name": "pdm.uninsubria.it.firebasetest"
         }
       },
       "oauth_client": [
         {
-          "client_id": "842466997670-s0d9g685h6g83g57rusqlvh308btgtnr.apps.googleusercontent.com",
+          "client_id": "639922819063-jcrai8heght7o6rrqnd6mvuidlinmtik.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAhgFXW0vM6mdgB2aVSkamMoOlpA7iSSec"
+          "current_key": "AIzaSyA_x8gY_dPVMqHfrgsWeuFzSNGpztxxcB8"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "842466997670-s0d9g685h6g83g57rusqlvh308btgtnr.apps.googleusercontent.com",
+              "client_id": "639922819063-jcrai8heght7o6rrqnd6mvuidlinmtik.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.ArrayAdapter
+import android.widget.ListView
+import com.google.firebase.firestore.FirebaseFirestore
 
 class MainActivity : AppCompatActivity() {
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,6 +17,7 @@ class MainActivity : AppCompatActivity() {
 
         //Titolo sulla toolbar
         supportActionBar?.title="Exam Countdown"
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {

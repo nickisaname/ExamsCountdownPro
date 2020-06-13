@@ -6,6 +6,7 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.firestore.FirebaseFirestore
 import kotlinx.android.synthetic.main.activity_aggiungi_esame.*
@@ -22,21 +23,15 @@ class AggiungiEsame : AppCompatActivity() {
         //Settaggio di un nuovo titolo per la nuova activity
         supportActionBar?.title="Aggiungi nuovo esame"
 
+        val nome = findViewById<EditText>(R.id.editText4)
+        val argomento = findViewById<EditText>(R.id.editText6)
+        val data = findViewById<EditText>(R.id.editText5)
+
         //dichiarazione Button listener
         val button = findViewById<Button>(R.id.buttonAdd)
 
         //funzione del bottone
-        button.setOnClickListener(View.OnClickListener {
-            val nome : String = editText4.getText().toString()
-            val argomento : String = editText6.getText().toString()
-            val data : String = editText5.getText().toString()
-
-            val esame : MutableMap <String, Any> = HashMap()
-            esame ["nome"] = nome
-            esame ["argomento"] = argomento
-            esame ["data"] = data
-            database.collection("Esami").add(esame)
-        })
+        button.setOnClickListener(View.OnClickListener { addEsame(nome.text.toString(), argomento.text.toString(), data.text.toString()) })
 
     }
 
@@ -72,6 +67,14 @@ class AggiungiEsame : AppCompatActivity() {
 
         datePickerDialog.show()
 
+    }
+
+    fun addEsame (nome : String, argomento : String, data : String) {
+        val esame : MutableMap <String, Any> = HashMap()
+        esame ["nome"] = nome
+        esame ["argomento"] = argomento
+        esame ["data"] = data
+        database.collection("Esami").document("Appello" + nome).set(esame)
     }
 
 }
